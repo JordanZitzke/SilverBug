@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverBug</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="imgs/favi.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SilverBug</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="imgs/birds.png" id="birds">
+        <img src="imgs/sun.png" id="sun">
+        <img src="imgs/back.png" id="back">
+        <img src="imgs/bug2.png" id="bug">
+    </section>
+    <div class="sec">
+        <h2>Fusca no Brasil</h2>
+        <p>Nas curvas sinuosas, um balé de lata,
+            Um ícone nacional, que nunca nos falta.
+            Fusca, o besouro, de alma brasileira,
+            Marcou gerações, com sua simpatia.<br><br>
+            
+            Nas ruas estreitas, ou nas estradas abertas,
+            Levando sonhos, amores e esperanças incertas.
+            Seu ronco familiar, um hino à vida,
+            Em cada viagem, uma história dividida.<br><br>
+            
+            De pai para filho, uma herança querida,
+            Um carro de família, sempre bem quista.
+            Em cada detalhe, uma paixão genuína,
+            Um símbolo de resistência, eternamente divina.<br><br>
+            
+            Nas praias ensolaradas, ou nas montanhas frias,
+            O Fusca sempre presente, em suas alegrias.
+            Em cada encontro, uma nova aventura,
+            Um carro atemporal, que nunca se encruza.<br><br>
+            
+            Mas o tempo passa, e as coisas mudam,
+            Novas tecnologias, novos rumos.
+            Mas o Fusca, imortal, em nossos corações,
+            Vive para sempre, em nossas emoções.</p>
+    </div>
+    <script>
+        let birds = document.getElementById('birds');
+        let sun = document.getElementById('sun');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            birds.style.left = value + 0.25 + 'px';
+            sun.style.top = value + 'px'
+        })
+    </script>
+</body>
+</html>
